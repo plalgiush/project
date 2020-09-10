@@ -6,3 +6,5 @@ var randColor = ['#FF0000', '#FF1493', '#FFA500', '#FFFF00', '#800080', '#DEB887
 var rand = Math.floor(Math.random() * randColor.length);
 
 console.log(randColor[rand]);
+
+alert(randColor[rand]);
