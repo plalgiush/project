@@ -3,18 +3,17 @@
 	padding: 0;
 }
 
-.box {
-	text-align: center;
-	margin-top: 10px;
+.my_table {
+	width: 734px;
+	margin: auto;
+	margin-top: 15%;
 }
+
 
 table {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size: 110%;
 	border-spacing: 0;
-	width: 734px;
-	margin: auto;
-	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
@@ -67,16 +66,16 @@ input[type="radio"] {
 .radio span {
 	position: relative;                                /* Относительное позиционирование */
     display: inline-block;                             /* Строчно-блочный элемент */
-    width: 16px; height: 16px;                         
-    background: #F5F5F5;                               
+    width: 16px; height: 16px;
+    background: #F5F5F5;
     border-radius: 50%;                                /* Круглый переключатель */
     box-shadow: inset 0 0 5px rgba(0,0,0,0.5);         /* Тень внутри */
 }
 
-.radio input:checked + span { 
-    background: #F44336;                               
+.radio input:checked + span {
+    background: #F44336;
    }
-  
+
  .radio input:checked + span::before {                 /* Добавляем белую точку по центру */
     content: '';
     position: absolute;
@@ -87,18 +86,27 @@ input[type="radio"] {
     border-radius: 50%;
    }
 
+.box {
+	display: flex;
+}
+
+.buttons_inside {
+	position: relative;
+    width: 220px;
+    top: -50px;
+    left: 511px;
+}
+
 .btnsqr {
 	width: 18px;
 	height: 18px;
 	border-radius: 2px;
-	padding-top: 12px;
-	margin: 3px;
-	margin-left: -120px;
-	
+	padding-bottom: 5px;
+
 	cursor: pointer;
 	border: 0;
 	background: #f3ed97;
-	
+
 }
 
 .btn {
@@ -110,7 +118,6 @@ input[type="radio"] {
 	padding: 5px 20px;
 	cursor: pointer;
 	margin: 10px;
-	margin-left: -100px;
     color: white;
     border: 0;
 }
@@ -119,7 +126,6 @@ input[type="radio"] {
 input[type="text"] {
 	width: 726px;
 	height: 40px;
-	margin-right: 15px;	
 	text-indent: 20px;
 
 }
@@ -128,4 +134,3 @@ input::placeholder {
 	font-size: 110%;
 	color: #000000;
 }
-
